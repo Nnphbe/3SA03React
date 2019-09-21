@@ -33,12 +33,12 @@ export default class WordCard extends Component {
     render(){
         return (
             <div>
-                <p>ROUND : {this.state.attempt}</p>
-                <p>Hint H........D</p>
+                <h2>ROUND : {this.state.attempt}</h2>
+                <h3>Hint  H********D</h3>
                 {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>) }
                 <p>{this.state.completed? 'YOU WIN' : ' '}</p>
                 <p>{this.state.completed? 'This word is HELLOWORLD' : ' '}</p>
-                <img src="https://image.dek-d.com/25/2706414/109121227" height="400" width="350"></img>
+                <img src="https://image.dek-d.com/25/2706414/109121227" height="350" width="300"></img>
             </div>
         );
     }
