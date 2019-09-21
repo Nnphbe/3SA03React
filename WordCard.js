@@ -39,6 +39,7 @@ export default class WordCard extends Component {
                 <p>{this.state.completed? 'YOU WIN' : ' '}</p>
                 <p>{this.state.completed? 'This word is HELLOWORLD' : ' '}</p>
                 <img src="https://image.dek-d.com/25/2706414/109121227" height="350" width="300"></img>
+                <p>Nannaphat Sirinual 6010110190 sec01</p>
             </div>
         );
     }
