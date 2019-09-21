@@ -37,6 +37,7 @@ export default class WordCard extends Component {
                 <p>Hint H........D</p>
                 {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>) }
                 <p>{this.state.completed? 'YOU WIN' : ' '}</p>
+                <p>{this.state.completed? 'This word is HELLOWORLD' : ' '}</p>
             </div>
         );
     }
