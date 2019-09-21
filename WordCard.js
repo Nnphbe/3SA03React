@@ -38,6 +38,7 @@ export default class WordCard extends Component {
                 {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>) }
                 <p>{this.state.completed? 'YOU WIN' : ' '}</p>
                 <p>{this.state.completed? 'This word is HELLOWORLD' : ' '}</p>
+                <img src="https://image.dek-d.com/25/2706414/109121227" height="400" width="350"></img>
             </div>
         );
     }
