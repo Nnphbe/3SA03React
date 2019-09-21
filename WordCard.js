@@ -35,6 +35,7 @@ export default class WordCard extends Component {
             <div>
                 <p>ROUND : {this.state.attempt}</p>
                 {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>) }
+                <p>{this.state.completed? 'YOU WIN' : ' '}</p>
             </div>
         );
     }
